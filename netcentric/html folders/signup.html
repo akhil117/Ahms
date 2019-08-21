@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>AHMS Sign Up</title>
@@ -9,13 +9,17 @@
 </head>
 <body>
 	<div class="signup">
-		<form action="./InsertData" method="post">
+		<form>
 			<h2 style="color:white">Sign Up</h2>
 			<input type="text" name="username" placeholder="First name"><br><br>
 			<input type="text" name="username" placeholder="Last name"><br><br>
 			<input type="password" name="password" id="pass" placeholder="Password"><br><br>
 			<input type="password" name="password" placeholder="Confirm Password"><br><br>
 			<input type="email" name="email" placeholder="Email address"><br><br>
+			<label for="usertype">User Type &nbsp;</label>
+			Patient<input type="radio" name="User type" value="Patient" style="default">			
+			Doctor<input type="radio" name="User type" value="Doctor" style="default">
+			Admin<input type="radio" name="User type" style="default"><br><br>
 			<input type="button" value="Sign up" onclick="validatePassword()"><br><br>
 			
 			<script>
